@@ -1,0 +1,47 @@
+{
+    "name": "blitz-php/http-client",
+    "description": "Client HTTP pour Blitz PHP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BlitzPHP\\HttpClient\\": "src/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/blitz-php/framework/issues",
+        "source": "https://github.com/blitz-php/framework"
+    },
+    "authors": [
+        {
+            "name": "Dimitri Sitchet Tomkeu",
+            "email": "devcode.dst@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0",
+        "blitz-php/traits": "^1",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "blitz-php/coding-standard": "^1.1",
+        "phpstan/phpstan": "^1.4.7"
+    },
+    "scripts": {
+        "analyze": "phpstan analyse",
+        "cs": "php-cs-fixer fix --ansi --verbose --dry-run --diff",
+        "cs-fix": "php-cs-fixer fix --ansi --verbose --diff"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }   
+}
